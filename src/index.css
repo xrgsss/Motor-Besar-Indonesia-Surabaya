@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-black: #050505;
+    --bg-dark-black: #0B0B0B;
+    --bg-surface: #121212;
+    --text-white: #F5F5F5;
+    --red-primary: #D60000;
+    --red-bright: #FF1717;
+    --gold-accent: #C9A227;
+    --gray-muted: #8A8A8A;
+  }
+
+  body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D60000;
+}
+
+/* Glassmorphism & Translucent details */
+.glass-panel {
+  background: rgba(11, 11, 11, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0BD 0%, #C9A227 50%, #8C6A10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-gradient-text {
+  background: linear-gradient(135deg, #FF5252 0%, #D60000 70%, #990000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-glow {
+  box-shadow: 0 0 30px rgba(214, 0, 0, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(201, 162, 39, 0.25);
+}
+
+/* Clip paths for aggressive automotive card shapes */
+.clip-corner {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.clip-corner-reverse {
+  clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+}
