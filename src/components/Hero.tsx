@@ -32,9 +32,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJoinModal }) => {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-red-500/40 backdrop-blur-md mb-8 shadow-xl shadow-red-950/40">
           <div className="w-2 h-2 rounded-full bg-[#D60000] animate-ping" />
           <span className="text-[11px] font-heading font-semibold tracking-[0.25em] text-gray-300 uppercase">
-            OFFICIAL COMMUNITY WEBSITE
-          </span>
-          <span className="text-[#C9A227] text-xs font-bold ml-1">★</span>
+            OFFICIAL COMMUNITY WEBSITE</span>
         </div>
 
         {/* Logo Branding Icon Centered in Hero */}
