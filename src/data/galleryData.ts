@@ -1,7 +1,7 @@
 export interface GalleryImage {
   id: string;
   title: string;
-  category: 'TOURING' | 'EVENT' | 'KOPDAR' | 'CHARITY' | 'ANNIVERSARY';
+  category: 'TOURING' | 'EVENT' | 'KOPDAR' | 'CHARITY' | 'ANNIVERSARY' | 'Motorcycle Events';
   date: string;
   location: string;
   src: string;
