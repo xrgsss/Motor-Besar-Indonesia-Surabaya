@@ -14,17 +14,17 @@ export interface StatisticItem {
 
 export const COMMUNITY_STATS: StatisticItem[] = [
   {
-    value: "20+",
-    label: "YEARS OF BROTHERHOOD",
+    value: "4 Years",
+    label: "OF BROTHERHOOD",
     sublabel: "Dedikasi & Kebersamaan Sejak Awal Berdiri"
   },
   {
-    value: "100+",
+    value: "50+",
     label: "COMMUNITY MEMBERS",
     sublabel: "Rider Motor Besar Berjiwa Solidaritas"
   },
   {
-    value: "50+",
+    value: "30+",
     label: "COMMUNITY ACTIVITIES",
     sublabel: "Touring, Bakti Sosial & Kopdar Tahunan"
   }

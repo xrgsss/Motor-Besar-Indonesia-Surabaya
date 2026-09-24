@@ -11,29 +11,29 @@ export interface GalleryImage {
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     id: "gal-1",
-    title: "Rolling Thunder Coast Ride",
-    category: "TOURING",
+    title: "Early morning looking for ducks",
+    category: "KOPDAR",
     date: "Agustus 2026",
-    location: "Pesisir Jalur Banyuwangi",
-    src: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1600&auto=format&fit=crop",
+    location: "Madura",
+    src: "/g1.png",
     aspectRatio: "wide"
   },
   {
     id: "gal-2",
-    title: "Bakti Sosial Ramadhan Peduli",
-    category: "CHARITY",
-    date: "Maret 2026",
-    location: "Grand City Surabaya",
-    src: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1600&auto=format&fit=crop",
+    title: "1 st East Java Safety First",
+    category: "Motorcycle Events",
+    date: "Juli 2026",
+    location: "Bumi Marinir Karang Pilang Surabaya",
+    src: "/g2.png",
     aspectRatio: "square"
   },
   {
     id: "gal-3",
-    title: "Night Kopdar at Townsquare",
+    title: "Sunmori Taman Dayu",
     category: "KOPDAR",
-    date: "September 2026",
-    location: "Sutos Surabaya",
-    src: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1600&auto=format&fit=crop",
+    date: "Juli 2026",
+    location: "Taman Dayu",
+    src: "/g3.png",
     aspectRatio: "square"
   },
   {
