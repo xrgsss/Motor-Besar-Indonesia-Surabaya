@@ -30,11 +30,13 @@ export const EventDetailModal: React.FC<EventDetailModalProps> = ({ event, onClo
             <X className="w-5 h-5" />
           </button>
 
-          <div className="absolute top-4 left-4 flex items-center gap-2">
-            <span className="px-3 py-1 bg-[#D60000] text-white text-xs font-heading font-bold uppercase rounded tracking-widest shadow-lg">
-              {event.status}
-            </span>
-          </div>
+          {event.status && (
+            <div className="absolute top-4 left-4 flex items-center gap-2">
+              <span className="px-3 py-1 bg-[#D60000] text-white text-xs font-heading font-bold uppercase rounded tracking-widest shadow-lg">
+                {event.status}
+              </span>
+            </div>
+          )}
 
           <div className="absolute bottom-6 left-6 right-6">
             <div className="text-xs font-heading font-bold text-[#C9A227] uppercase tracking-wider mb-1">
@@ -88,15 +90,50 @@ export const EventDetailModal: React.FC<EventDetailModalProps> = ({ event, onClo
           {/* Rundown Schedule */}
           {event.schedule && event.schedule.length > 0 && (
             <div>
-              <h4 className="text-xs font-heading font-bold text-[#D60000] uppercase tracking-widest mb-3">
-                RUNDOWN / SUSUNAN ACARA
+              <h4 className="text-xs font-heading font-bold text-[#D60000] uppercase tracking-widest mb-4 flex items-center justify-between">
+                <span>RUNDOWN / SUSUNAN ACARA</span>
+                <span className="text-[10px] text-gray-500 font-mono">TOTAL {event.schedule.length} AGENDA</span>
               </h4>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {event.schedule.map((item, idx) => (
-                  <div key={idx} className="p-3 bg-[#050505] border border-white/5 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-2">
-                    <span className="font-heading font-bold text-[#C9A227] w-36 shrink-0">{item.time}</span>
-                    <span className="text-gray-300 flex-1">{item.activity}</span>
-                  </div>
+                  <React.Fragment key={idx}>
+                    {item.dayHeader && (
+                      <div className="mt-6 mb-3 p-3 bg-gradient-to-r from-[#D60000]/20 via-[#0B0B0B] to-[#0B0B0B] border-l-4 border-[#D60000] rounded-r-lg">
+                        <span className="text-xs sm:text-sm font-heading font-extrabold text-[#C9A227] uppercase tracking-wider block">
+                          {item.dayHeader}
+                        </span>
+                      </div>
+                    )}
+                    <div className="p-3.5 bg-[#050505] border border-white/10 rounded-xl hover:border-red-600/40 transition-colors flex flex-col gap-2">
+                      <div className="flex flex-wrap items-start justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <span className="font-heading font-bold text-[#C9A227] text-xs bg-[#121212] px-2.5 py-1 rounded border border-[#C9A227]/30">
+                            {item.time}
+                          </span>
+                          {item.duration && (
+                            <span className="text-[10px] font-mono text-gray-400 bg-white/5 px-2 py-0.5 rounded">
+                              {item.duration}
+                            </span>
+                          )}
+                        </div>
+                        {item.pic && (
+                          <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-wider bg-white/5 px-2 py-0.5 rounded border border-white/5">
+                            PIC: {item.pic}
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="text-sm font-heading font-bold uppercase text-white leading-snug">
+                        {item.activity}
+                      </div>
+
+                      {item.details && (
+                        <div className="text-xs text-gray-300 leading-relaxed bg-[#0B0B0B]/80 p-2.5 rounded-lg border border-white/5 whitespace-pre-line">
+                          {item.details}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
                 ))}
               </div>
             </div>

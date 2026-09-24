@@ -68,29 +68,21 @@ export const EventSection: React.FC<EventSectionProps> = ({ onSelectEvent }) => 
 
         {/* Featured Big Event Banner with Live Countdown */}
         <div className="bg-[#0B0B0B] border border-[#D60000]/40 rounded-2xl overflow-hidden mb-12 shadow-2xl shadow-red-950/30 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
             {/* Left Image & Overlay */}
-            <div className="lg:col-span-6 relative min-h-[320px] lg:min-h-full overflow-hidden">
-              <img
-                src={featuredEvent.image}
-                alt={featuredEvent.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0B0B0B] via-[#0B0B0B]/40 to-transparent" />
-              
-              {/* Event Badge */}
-              <div className="absolute top-6 left-6 flex items-center gap-2">
-                <span className="px-3 py-1 bg-[#D60000] text-white text-[10px] font-heading font-bold tracking-widest uppercase rounded shadow-lg">
-                  FEATURED EVENT
-                </span>
-                <span className="px-3 py-1 bg-black/80 backdrop-blur-md text-[#C9A227] border border-[#C9A227]/40 text-[10px] font-heading font-bold tracking-widest uppercase rounded">
-                  {featuredEvent.status}
-                </span>
+            <div className="lg:col-span-5 relative bg-[#050505] flex items-center justify-center p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-white/10 overflow-hidden">
+              <div className="relative w-full flex items-center justify-center">
+                <img
+                  src={featuredEvent.image}
+                  alt={featuredEvent.title}
+                  className="max-h-[360px] sm:max-h-[390px] w-auto max-w-full object-contain rounded-xl shadow-2xl border border-white/10"
+                />
+                
               </div>
             </div>
 
             {/* Right Event Details & Countdown */}
-            <div className="lg:col-span-6 p-8 sm:p-10 flex flex-col justify-between">
+            <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
               <div>
                 {/* Date & Location Header */}
                 <div className="flex flex-wrap items-center gap-6 text-sm text-gray-300 font-semibold mb-4">

@@ -39,14 +39,25 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onSelectArticle }) => 
               <div>
                 {/* Image Header */}
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-transparent to-transparent opacity-80" />
-                  <div className="absolute top-3 left-3">
+                  {article.url ? (
+                    <a href={article.url} target="_blank" rel="noopener noreferrer" className="block h-full w-full">
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-transparent to-transparent opacity-80 pointer-events-none" />
+                  <div className="absolute top-3 left-3 pointer-events-none">
                     <span className="px-2.5 py-1 bg-black/80 border border-red-500/40 rounded text-[9px] font-heading font-bold tracking-widest text-white uppercase backdrop-blur-md">
                       {article.category}
                     </span>
@@ -68,7 +79,13 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onSelectArticle }) => 
                   </div>
 
                   <h3 className="text-lg font-heading font-bold uppercase text-white mb-3 group-hover:text-[#D60000] transition-colors leading-snug line-clamp-2">
-                    {article.title}
+                    {article.url ? (
+                      <a href={article.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        {article.title}
+                      </a>
+                    ) : (
+                      article.title
+                    )}
                   </h3>
 
                   <p className="text-xs text-gray-400 line-clamp-3 leading-relaxed mb-4">
@@ -79,13 +96,25 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onSelectArticle }) => 
 
               {/* Read More Footer */}
               <div className="px-6 pb-6 pt-2">
-                <button
-                  onClick={() => onSelectArticle(article)}
-                  className="w-full py-2.5 px-4 bg-[#121212] hover:bg-[#D60000] text-gray-300 hover:text-white border border-white/10 hover:border-red-600 rounded text-xs font-heading font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-                >
-                  <span>READ MORE</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                {article.url ? (
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2.5 px-4 bg-[#121212] hover:bg-[#D60000] text-gray-300 hover:text-white border border-white/10 hover:border-red-600 rounded text-xs font-heading font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                  >
+                    <span>READ MORE</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => onSelectArticle(article)}
+                    className="w-full py-2.5 px-4 bg-[#121212] hover:bg-[#D60000] text-gray-300 hover:text-white border border-white/10 hover:border-red-600 rounded text-xs font-heading font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                  >
+                    <span>READ MORE</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+                )}
               </div>
             </article>
           ))}

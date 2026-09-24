@@ -14,71 +14,83 @@ export interface NewsArticle {
 
 export const INTERNAL_NEWS: NewsArticle[] = [
   {
-    id: "mbi-surabaya-sukses-gelar-touring-banyuwangi",
-    title: "MBI Surabaya Selesaikan Rally Trans-Java 1.000 KM Tanpa Insiden",
-    category: "Touring Report",
-    date: "18 September 2026",
-    author: "Tim Humas MBI Surabaya",
-    image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Sebanyak 45 pengendaran motor besar MBI Surabaya berhasil menuntaskan etape touring panjang lintasan Jawa Timur - Bali dengan mengedepankan Zero Accident dan etika berlalu lintas.",
-    content: "Surabaya — Rombongan touring Motor Besar Indonesia (MBI) Surabaya resmi kembali ke Kota Pahlawan setelah menyelesaikan perjalanan jarak jauh sejauh 1.000 kilometer. Touring bertajuk Trans-Java Brotherhood Run 2026 ini dilepas langsung oleh Ketua MBI Surabaya bersama jajaran Satlantas setempat.\n\nPerjalanan melintasi rute perbukitan, jalur pesisir pantai, hingga medan berkelok di jalur Ijen Banyuwangi dituntaskan dengan tertib tanpa ada insiden lalu lintas sedikit pun. Pembina MBI Surabaya menegaskan bahwa keselamatan serta ketertiban berkendara di jalan raya adalah marwah tertinggi komunitas ini."
-  },
-  {
-    id: "mbi-surabaya-resmikan-posko-safety-riding",
-    title: "Pelopor Keselamatan Jalan: MBI Surabaya Kampanyekan 'Courtesy & Respect' di Jalan Raya",
-    category: "Safety Riding",
-    date: "10 September 2026",
-    author: "Divisi Safety & Rules MBI",
-    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "MBI Surabaya menggelar workshop edukasi etika berkendara moge bersama kepolisian daerah demi menciptakan jalan raya yang aman, nyaman, dan saling menghormati.",
-    content: "Sebagai bagian dari tanggung jawab moral pengendara motor besar di mata masyarakat, MBI Surabaya menyelenggarakan Pelatihan Safety Riding & Courtesy Campaign di Sirkuit GBT Surabaya. Kegiatan ini diikuti oleh seluruh jajaran member dan prospective member MBI."
-  },
-  {
-    id: "donasi-kemanusiaan-bencana-alam-mbi",
-    title: "MBI Surabaya Salurkan Bantuan Tanggap Darurat Bencana Logistik senilai 150 Juta Rupiah",
+    id: "mbi-surabaya-peduli-jatim-today",
+    title: "MBI Surabaya Luncurkan Program 'MBI Surabaya Peduli', Santuni Anak Yatim dan Bagikan 1.000 Takjil di Bulan Ramadan",
     category: "Community",
-    date: "02 September 2026",
-    author: "Tim Peduli Sesama MBI",
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Aksi cepat tanggap komunitas MBI Surabaya menyerahkan ribuan paket logistik dan obat-obatan secara langsung kepada korban terdampak bencana alam di wilayah Jawa Timur.",
-    content: "Solidaritas MBI Surabaya kembali terbukti secara nyata. Melalui program Peduli Sesama, tim bergerak menyalurkan bantuan berupa perlengkapan bayi, bahan makanan pokok, obat-obatan, dan selimut langsung ke posko pengungsian utama."
+    date: "Ramadan",
+    author: "Jatim Today",
+    source: "Jatim Today",
+    image: "https://jatimtoday.co.id/file/2026/03/IMG_20260308_122743.jpg",
+    excerpt: "MBI Surabaya meluncurkan program kemanusiaan 'MBI Surabaya Peduli' dengan menyantuni puluhan anak yatim serta membagikan 1.000 paket takjil gratis di bulan Ramadan.",
+    content: "Surabaya — Komunitas Motor Besar Indonesia (MBI) Surabaya resmi meluncurkan kegiatan aksi sosial bertajuk 'MBI Surabaya Peduli'. Dalam kegiatan ini, para anggota menyerahkan santunan bagi anak-anak yatim serta membagikan 1.000 paket takjil berbuka puasa di jalanan Kota Surabaya.",
+    isExternal: true,
+    url: "https://jatimtoday.co.id/6052/mbi-surabaya-luncurkan-program-mbi-surabaya-peduli-santuni-anak-yatim-dan-bagikan-1-000-takjil-di-bulan-ramadan/"
   },
   {
-    id: "persiapan-anniversary-ke-8-mbi-surabaya",
-    title: "Menjelang 8th Anniversary, MBI Surabaya SIapkan Perayaan Terbesar di Bromo",
-    category: "Internal Club",
-    date: "25 Agustus 2026",
-    author: "Panitia Pelaksana 8th Anniversary",
-    image: "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Panitia perayaan ulang tahun MBI Surabaya mematangkan persiapan event nasional yang diprediksi dihadiri lebih dari 300 moge dari berbagai wilayah Indonesia.",
-    content: "Persiapan peringatan ulang tahun ke-8 Motor Besar Indonesia Surabaya memasuki tahap akhir. Acara yang dijadwalkan berlangsung di dataran tinggi Bromo pada Oktober 2026 mendatang ini akan mempertemukan para pencinta moge Nusantara."
+    id: "mbi-surabaya-bantuan-bubutan",
+    title: "Peduli Kondisi Masyarakat, MBI Surabaya Bagi Bantuan ke Warga Bubutan di Bulan Ramadan",
+    category: "Community",
+    date: "Ramadan",
+    author: "MBI Surabaya",
+    source: "MBI Surabaya",
+    image: "https://asset.tribunnews.com/SHFK0-9o8dmK8iGklh-WSLWvpWI=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/jatim/foto/bank/originals/mbi-surabaya-gelar-baksos-untuk-masyarakat-di-mapolsek.jpg",
+    excerpt: "Bentuk kepedulian sosial, MBI Surabaya menyerahkan paket bantuan logistik sembako dan donasi bagi masyarakat kawasan Bubutan pada bulan suci Ramadan.",
+    content: "Sebagai wujud nyata kepedulian sosial terhadap sesama, MBI Surabaya menyalurkan paket bantuan sembako dan logistik kepada warga di kawasan Bubutan, Surabaya selama momen bulan suci Ramadan.",
+    isExternal: true,
+    url: "https://share.google/8o0oRaENu11CKNdox"
+  },
+  {
+    id: "mbi-surabaya-donasi-aceh-sumut-kempalan",
+    title: "Setelah Galang Donasi untuk Aceh-Sumut, MBI Surabaya Peduli Berbagi dengan 30 Anak Yatim Piatu",
+    category: "Community",
+    date: "MBI Peduli",
+    author: "Kempalan.com",
+    source: "Kempalan.com",
+    image: "https://kempalan.com/wp-content/uploads/2026/03/img-20260308-wa0010-2048x1152.webp",
+    excerpt: "Usai merampungkan penggalangan donasi bencana Aceh-Sumut, MBI Surabaya Peduli melanjutkan rangkaian aksi sosial berbagi santunan kepada 30 anak yatim piatu.",
+    content: "Komunitas MBI Surabaya Peduli kembali menunjukkan komitmen kepeduliannya. Setelah berhasil menggalang donasi untuk korban bencana di Aceh dan Sumatra Utara, tim melanjutkan kegiatan sosial dengan berbagi santunan dan keceriaan bersama 30 anak yatim piatu.",
+    isExternal: true,
+    url: "https://share.google/DgQCZrYgvfnZKLqyp"
+  },
+  {
+    id: "mbi-surabaya-peduli-1000-takjil",
+    title: "MBI Surabaya Peduli Bagikan 1000 Paket Takjil",
+    category: "Community",
+    date: "Ramadan",
+    author: "Tim Peduli Sesama MBI",
+    source: "MBI Surabaya",
+    image: "https://jatimkini.com/po-content/uploads/202603/komunitas-motor-besar-indonesia.jpeg",
+    excerpt: "Komunitas Motor Besar Indonesia (MBI) Surabaya turun ke jalan membagikan 1.000 paket takjil berbuka puasa untuk pengendara dan masyarakat umum.",
+    content: "Semangat berbagi MBI Surabaya diwujudkan dengan membagikan 1.000 paket takjil secara gratis kepada para pengguna jalan dan pengendara di titik-titik strategis Kota Surabaya.",
+    isExternal: true,
+    url: "https://share.google/0XedChl7iIJ6RYjU4"
   }
 ];
 
 export const EXTERNAL_AUTOMOTIVE_NEWS: NewsArticle[] = [
   {
     id: "ext-gridoto-regulasi-moge-indonesia",
-    title: "Regulasi & Pengawasan Jalur Moge Di Jalan Tol Kembali Jadi Pembahasan Nasional",
+    title: "Mau Masuk Tol, Pengendara Moge Harus Disiplin Dahulu",
     category: "Automotive Industry",
-    date: "22 September 2026",
-    author: "GridOto.com",
-    source: "GridOto",
-    image: "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Asosiasi Industri Sepeda Motor Indonesia bersama Ditlantas mengevaluasi usulan pembukaan akses infrastruktur khusus bagi kendaraan roda dua berkapasitas di atas 500cc.",
+    date: "3 Februari 2025",
+    author: "otorider.com",
+    source: "otorider",
+    image: "https://otorider.com/image/load/1200/675/gallery/ilustrasi_moge_melintas_di_jalan_tol_2025_erwp.jpg",
+    excerpt: "Wacana mengizinkan sepeda motor masuk jalan tol kembali mencuat di Indonesia dimana mengusulkan agar motor gede (moge) diizinkan melintas di jalan tol. Usulan ini menarik perhatian berbagai pihak, termasuk pengamat transportasi dan pelaku industri otomotif.",
     isExternal: true,
-    url: "https://www.gridoto.com/"
+    url: "https://otorider.com/berita/2025/mau-masuk-tol-pengendara-moge-harus-disiplin-dahulu-maudagefulu"
   },
   {
     id: "ext-detik-tren-cruiser-electric-2027",
-    title: "Pabrikan Motor Besar Dunia Mulai Perkenalkan Prototip Big Cruiser Berbahan Baterai Elektrik",
+    title: "Deretan Motor Baru Jakarta Fair 2025, dari Cruiser hingga Motor Listrik",
     category: "Automotive Industry",
-    date: "20 September 2026",
-    author: "DetikOto",
-    source: "Detik.com",
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Produsen motor asal Amerika dan Eropa memamerkan konsep motor besar elektrik berdaya jangkau hingga 400 km untuk era touring masa depan yang ramah lingkungan.",
+    date: "30 Juni 2025",
+    author: "otorider",
+    source: "otorider.com",
+    image: "https://otorider.com/image/load/1200/675/gallery/area_motor_di_jakarta_fair_2025_2025_bfkx.jpeg",
+    excerpt: "Pameran Jakarta Fair 2025 atau Pekan Raya Jakarta kembali menjadi magnet bagi industri otomotif roda dua. Sejumlah pabrikan motor ternama memanfaatkan ajang ini untuk memperkenalkan produk terbaru mereka kepada publik Indonesia, mulai dari motor listrik, petualang, hingga cruiser bergaya retro.",
     isExternal: true,
-    url: "https://www.detik.com/oto"
+    url: "https://otorider.com/berita/2025/deretan-motor-baru-jakarta-fair-2025-dari-cruiser-hingga-motor-listrik-derdbjcdrik"
   },
   {
     id: "ext-kompas-tips-merawat-mesin-big-twin",

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NewsArticle } from '../data/newsData';
-import { X, Calendar, User } from 'lucide-react';
+import { X, Calendar, User, ExternalLink } from 'lucide-react';
 
 interface NewsDetailModalProps {
   article: NewsArticle | null;
@@ -70,17 +70,30 @@ export const NewsDetailModal: React.FC<NewsDetailModalProps> = ({ article, onClo
             )}
           </div>
 
-          <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+          <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
             <span className="font-heading font-bold uppercase tracking-wider text-gray-500">
               OFFICIAL PUBLICATION • MBI SURABAYA
             </span>
 
-            <button
-              onClick={onClose}
-              className="px-6 py-2 bg-[#121212] hover:bg-[#D60000] text-white font-heading font-bold text-xs uppercase rounded transition-colors"
-            >
-              TUTUP ARTIKEL
-            </button>
+            <div className="flex items-center gap-3">
+              {article.url && (
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2 bg-[#D60000] hover:bg-red-700 text-white font-heading font-bold text-xs uppercase rounded transition-colors inline-flex items-center gap-2"
+                >
+                  <span>BACA DI SUMBER</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              )}
+              <button
+                onClick={onClose}
+                className="px-6 py-2 bg-[#121212] hover:bg-gray-800 text-white font-heading font-bold text-xs uppercase rounded transition-colors"
+              >
+                TUTUP ARTIKEL
+              </button>
+            </div>
           </div>
         </div>
       </div>

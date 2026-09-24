@@ -1,3 +1,12 @@
+export interface ScheduleItem {
+  time: string;
+  activity: string;
+  duration?: string;
+  details?: string;
+  pic?: string;
+  dayHeader?: string;
+}
+
 export interface EventItem {
   id: string;
   day: string;
@@ -12,8 +21,8 @@ export interface EventItem {
   description: string;
   organizer: string;
   expectedParticipants: string;
-  status: 'Registration Open' | 'Upcoming' | 'Exclusive Member Event';
-  schedule: { time: string; activity: string }[];
+  status?: string;
+  schedule: ScheduleItem[];
 }
 
 export const UPCOMING_EVENTS: EventItem[] = [
@@ -23,20 +32,182 @@ export const UPCOMING_EVENTS: EventItem[] = [
     month: "SEP",
     year: "2026",
     targetDateISO: "2026-09-26T07:00:00+07:00",
-    title: "MBI SURABAYA 8TH ANNIVERSARY GRAND RALLY",
-    subtitle: "Roar of Brotherhood • Celebration of Unity",
-    location: "SURABAYA — KOTA BATU — BROMO",
+    title: "MBI SURABAYA 4TH ANNIVERSARY",
+    subtitle: "FOUR EVER",
+    location: "SURABAYA — MOJOKERTO — JOMBANG — BATU",
     time: "06:00 WIB - Selesai",
-    image: "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1600&auto=format&fit=crop",
-    description: "Puncak peringatan 8 tahun Motor Besar Indonesia Surabaya. Merayakan 8 tahun dedikasi persaudaraan dengan convoy touring akbar, gala dinner, bakti sosial peduli anak yatim, dan penampilan musik kebersamaan.",
+    image: "/flyer mbi four ever.jpg",
+    description: "Puncak peringatan 4 tahun Motor Besar Indonesia Surabaya. Merayakan 4 tahun dedikasi persaudaraan dengan convoy touring akbar, gala dinner, bakti sosial peduli anak yatim, dan penampilan musik kebersamaan.",
     organizer: "Pengurus Daerah MBI Surabaya",
-    expectedParticipants: "350+ Big Motorcycle Riders",
+    expectedParticipants: "55+ Big Motorcycle Riders",
     status: "Registration Open",
     schedule: [
-      { time: "06:00 - 07:00", activity: "Gathering & Briefing Safety Line di Parkir Timur Plaza Surabaya" },
-      { time: "07:30", activity: "Flag-Off Rolling Thunder Surabaya — Purwosari — Batu" },
-      { time: "11:30 - 13:00", activity: "Rest & Community Charity Lunch di Kota Batu" },
-      { time: "19:00 - 22:30", activity: "Gala Night Anniversary & Brotherhood Awarding 2026" }
+      // HARI 1
+      {
+        dayHeader: "HARI 1: SABTU, 26 SEPTEMBER 2026 (TOURING & GALA DINNER ANNIVERSARY)",
+        time: "06:00 – 06:45",
+        duration: "45 Menit",
+        activity: "Gathering & Re-Registration",
+        details: "Kumpul peserta di Tikum Utama Surabaya. Registrasi ulang dan checking perlengkapan rider.",
+        pic: "Sekretaris & Logistik"
+      },
+      {
+        time: "06:45 – 07:00",
+        duration: "15 Menit",
+        activity: "Briefing Safety Riding & Doa",
+        details: "Safety briefing dari Road Captain (RC), penyelarasan frekuensi radio komando, serta doa bersama.",
+        pic: "Kabid Touring & Officer"
+      },
+      {
+        time: "07:00 – 07:10",
+        duration: "10 Menit",
+        activity: "FLAG-OFF START",
+        details: "Seremoni pelepasan rombongan konvoi resmi dari Surabaya menuju Mojokerto.",
+        pic: "Ketua Panitia & Pengurus"
+      },
+      {
+        time: "07:10 – 08:30",
+        duration: "1 Jam 20 Menit (45 km)",
+        activity: "Riding Leg 1: Surabaya -> Mojokerto",
+        details: "Konvoi berjalan tertib dan teratur (rolling thunder kecepatan rata-rata 45-50 km/jam) dipimpin RC & Sweeper.",
+        pic: "RC, Sweeper & Guard"
+      },
+      {
+        time: "08:30 – 09:15",
+        duration: "45 Menit (30 km)",
+        activity: "Riding Leg 2: Mojokerto -> Jombang",
+        details: "Perjalanan melintasi jalur antar kota Mojokerto menuju Jombang.",
+        pic: "RC & Sweeper"
+      },
+      {
+        time: "09:15 – 11:00",
+        duration: "105 Menit",
+        activity: "CHECKPOINT 1 & BREAKFAST: Jombang",
+        details: "Lokasi: Warung Barokah Hj. Ida Jombang. Penyambutan & temu kangen member MBI Jombang. Sarapan pagi bersama & refueling BBM kendaraan.",
+        pic: "Kabid Konsumsi & Logistik"
+      },
+      {
+        time: "11:00 – 12:45",
+        duration: "105 Menit (65 km)",
+        activity: "Riding Leg 3: Jombang -> Batu",
+        details: "Perjalanan rute pegunungan (Kandangan – Pujon – Batu). Formasi diperrapat & storing car siaga penuh di ekor.",
+        pic: "RC & Storing"
+      },
+      {
+        time: "12:45 – 14:35",
+        duration: "150 Menit",
+        activity: "CHECKPOINT 2 & LUNCH: Batu",
+        details: "Lokasi: Wisata Warung Wareg Batu. Makan siang hidangan khas Batu & istirahat sejenak mendinginkan mesin motor.",
+        pic: "Kabid Konsumsi"
+      },
+      {
+        time: "14:35 – 15:10",
+        duration: "35 Menit (10 km)",
+        activity: "Riding Leg 4: Warung Wareg -> Hotel",
+        details: "Moving konvoi singkat menuju akomodasi Hotel Aston Inn Batu.",
+        pic: "RC & Patroli"
+      },
+      {
+        time: "15:10 – 18:30",
+        duration: "200 Menit",
+        activity: "Check-in Hotel & Personal Time",
+        details: "Lokasi: Aston Inn Batu. Pembagian kunci kamar (Rooming list), bongkar muat bagasi dari mobil logistik oleh private guard dan langsung di antar ke kamar peserta. Istirahat, mandi, dan persiapan busana Gala Dinner.",
+        pic: "Sekretaris & Logistik"
+      },
+      {
+        time: "18:30 – 19:00",
+        duration: "30 Menit",
+        activity: "Guest Registration",
+        details: "Registrasi tamu undangan, sesi foto di Wall of Fame MBI Four Ever, dan ramah tamah cocktail/snack pembuka.",
+        pic: "Protokoler & Acara"
+      },
+      {
+        time: "19:00 – 19:30",
+        duration: "30 Menit",
+        activity: "Opening",
+        details: "Pembukaan, Sambutan, serta Hymne/Mars MBI.",
+        pic: "Kabid Acara & MC"
+      },
+      {
+        time: "19:30 – 20:00",
+        duration: "30 Menit",
+        activity: "Sambutan-Sambutan Official",
+        details: "Sambutan Ketua MBI Wilayah Surabaya (Bro Edward), dan perwakilan Pengurus Pusat / Chapter.",
+        pic: "Kabid Acara & Protokoler"
+      },
+      {
+        time: "20:00 – 20:30",
+        duration: "30 Menit",
+        activity: "CEREMONIAL ANNIVERSARY 4TH",
+        details: "Prosesi tiup lilin, pemotongan tumpeng anniversary \"MBI FOUR EVER\", dan sesi foto bersama seluruh pengurus & member.",
+        pic: "Kabid Acara"
+      },
+      {
+        time: "20:30 – 21:30",
+        duration: "60 Menit",
+        activity: "Awarding Session & Door Prize",
+        details: "Pembagian penghargaan kategori member.",
+        pic: "Kabid Konsumsi & Acara"
+      },
+      {
+        time: "21:30 – 22:30",
+        duration: "60 Menit",
+        activity: "Gala Dinner",
+        details: "Santap malam bersama (buffet dinner), diiringi pertunjukan live music/band.",
+        pic: "Kabid Acara & Bendahara"
+      },
+      {
+        time: "22:30 – 23:00",
+        duration: "30 Menit",
+        activity: "Ramah Tamah",
+        details: "Sesi foto bebas, ramah tamah persaudaraan, penutupan.",
+        pic: "Panitia All Bidang"
+      },
+
+      // HARI 2
+      {
+        dayHeader: "HARI 2: MINGGU, 27 SEPTEMBER 2026 (PHOTO SESSION & RETURN RIDE)",
+        time: "07:00 – 08:00",
+        duration: "60 Menit",
+        activity: "Morning Breakfast & Socialize",
+        details: "Lokasi: Restoran Hotel Aston Inn Batu.",
+        pic: "Kabid Konsumsi"
+      },
+      {
+        time: "08:00 – 09:15",
+        duration: "75 Menit",
+        activity: "Official Photo & Video Session",
+        details: "Lokasi: Outdoor Area Hotel / Icon Kota Batu.",
+        pic: "Kabid Acara & Dokumentasi"
+      },
+      {
+        time: "09:15 – 09:45",
+        duration: "30 Menit",
+        activity: "Packing & Official Check-Out",
+        details: "Persiapan barang pribadi, pengembalian kunci kamar hotel, dan muat koper ke support truck/car.",
+        pic: "Sekretaris & Logistik"
+      },
+      {
+        time: "09:45 – 10:00",
+        duration: "15 Menit",
+        activity: "Briefing Return Ride & Doa",
+        details: "Briefing rute kepulangan menuju Surabaya dan penataan barisan konvoi.",
+        pic: "Kabid Touring & Officer"
+      },
+      {
+        time: "10:00 – 14:30",
+        duration: "270 Menit (100 km)",
+        activity: "RETURN RIDE: Batu -> Surabaya",
+        details: "Perjalanan kepulangan bersama rombongan secara tertib (Zero Accident) langsung menuju titik akhir Surabaya / domisili masing-masing.",
+        pic: "RC, Sweeper & All Crew"
+      },
+      {
+        time: "14:30",
+        duration: "-",
+        activity: "FINISH",
+        details: "Tiba di Surabaya dengan selamat. Pembubaran rombongan konvoi secara resmi.",
+        pic: "Ketua Panitia"
+      }
     ]
   },
   {
