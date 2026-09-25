@@ -12,9 +12,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJoinModal }) => {
       {/* Background Image with Cinematic Dark Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2000&auto=format&fit=crop"
+          src="/photo-1558981806-ec527fa84c39.avif"
           alt="Big Motorcycle Group Riding Highway"
-          className="w-full h-full object-cover object-center scale-105 animate-pulse duration-[10000ms]"
+          className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          decoding="async"
         />
         {/* Dark Vignette & Layered Gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/75 to-black/60" />
@@ -41,6 +43,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJoinModal }) => {
             src="/logo.png"
             alt="MBI Surabaya Official Crest"
             className="w-28 sm:w-36 md:w-44 h-auto object-contain filter drop-shadow-[0_0_20px_rgba(214,0,0,0.4)] transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

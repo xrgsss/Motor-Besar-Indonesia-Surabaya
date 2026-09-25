@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="icon" type="image/webp" href="/logo.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor Besar Indonesia Surabaya</title>
   <meta name="description"
@@ -13,16 +13,31 @@
   <meta property="og:title" content="Motor Besar Indonesia Surabaya" />
   <meta property="og:description"
     content="Official website Motor Besar Indonesia Surabaya. Brotherhood • Ride • Unity." />
-  <meta property="og:image" content="/logo.png" />
+  <meta property="og:image" content="/logo.webp" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="id_ID" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts — non-render-blocking (print trick) -->
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'" />
+  <!-- Noscript fallback -->
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+  </noscript>
 </head>
 
 <body

@@ -76,6 +76,8 @@ export const EventSection: React.FC<EventSectionProps> = ({ onSelectEvent }) => 
                   src={featuredEvent.image}
                   alt={featuredEvent.title}
                   className="max-h-[360px] sm:max-h-[390px] w-auto max-w-full object-contain rounded-xl shadow-2xl border border-white/10"
+                  loading="lazy"
+                  decoding="async"
                 />
                 
               </div>

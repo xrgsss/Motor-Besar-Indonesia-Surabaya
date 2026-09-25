@@ -19,7 +19,7 @@ export const ACTIVITIES_DATA: Activity[] = [
     category: "Motorcycle Events",
     date: "25 Juli 2026",
     location: "Bumi Marinir Karang Pilang Surabaya",
-    image: "/DSC00753.jpg",
+    image: "/DSC00753.webp",
     shortDesc: "Bukan sekadar latihan berkendara, tetapi sebuah gerakan untuk membangun budaya berkendara yang aman, bertanggung jawab, dan peduli terhadap sesama.",
     fullDesc: "Motor Besar Indonesia (MBI) Surabaya mengundang seluruh pecinta motor besar untuk menjadi bagian dari kolaborasi Safety Riding pertama di Jawa Timur.",
     highlights: [
@@ -39,7 +39,7 @@ export const ACTIVITIES_DATA: Activity[] = [
     category: "Charity",
     date: "28 Maret 2026",
     location: "Plaza Harley Davidson of Surabaya, Jalan Mayjen HR Muhammad, Surabaya",
-    image: "/SaveInta.com_649234591_18034390166782080_1948599554940140407_n.jpg",
+    image: "/saveinta_649234591.webp",
     shortDesc: "Komunitas Motor Besar Indonesia (MBI) Surabaya membagikan 1000 paket takjil, melalui program “MBI Surabaya Peduli”, MBI juga memberikan santunan kepada 30 anak yatim",
     fullDesc: "Komunitas Motor Besar Indonesia (MBI) Surabaya membagikan 1000 paket takjil, melalui program “MBI Surabaya Peduli”, MBI juga memberikan santunan kepada 30 anak yatim. Kegiatan tersebut berlangsung  di Plaza Harley Davidson of Surabaya, Jalan Mayjen HR Muhammad. ",
     highlights: [
@@ -56,7 +56,7 @@ export const ACTIVITIES_DATA: Activity[] = [
     category: "Touring",
     date: "18 Februari 2026",
     location: "Banyuwangi",
-    image: "/SaveInta.com_635497452_18032050133782080_4607399443073949506_n.jpg",
+    image: "/saveinta_635497452.webp",
     shortDesc: "Motor Besar Indonesia (MBI) Surabaya adalah komunitas motor besar terkemuka yang menyatukan para penggemar motor premium di seluruh Jawa Timur. Sementara Ultimate East Java Tour Experience umumnya merujuk pada rencana perjalanan petualangan kelas atas selama beberapa hari melintasi medan ikonik Jawa Timur.",
     fullDesc: "Motor Besar Indonesia (MBI) Surabaya is a prominent big bike community that brings together premium motorcycle enthusiasts across East Java. While Ultimate East Java Tour Experience generally refers to high-end, multi-day adventure itineraries across East Java's iconic terrains, MBI Surabaya actively fosters the regional big bike culture through organized long-distance rides, regular charity runs, and official safety riding collaborations.",
     highlights: [
@@ -72,7 +72,7 @@ export const ACTIVITIES_DATA: Activity[] = [
     category: "Anniversary",
     date: "26 - 27 September 2026",
     location: "Kota Batu, Jawa Timur",
-    image: "/flyer mbi four ever.jpg",
+    image: "/flyer_mbi_four_ever.webp",
     shortDesc: "Puncak perayaan ulang tahun MBI Surabaya ke-4 menghadirkan gathering nasional seluruh chapter Motor Besar Indonesia.",
     fullDesc: "Memperingati 4 tahun perjalanan MBI Surabaya menjaga ikrar persaudaraan. Acara dipusatkan di Batu dengan puncak acara Gala Night, penghargaan rider teladan, serta rolling thunder charity ride.",
     highlights: [
@@ -89,7 +89,7 @@ export const ACTIVITIES_DATA: Activity[] = [
     category: "Charity",
     date: "21 Agustus 2026",
     location: "Surabaya",
-    image: "/SaveInta.com_779048656_18059900723782080_4427146950335720186_n.jpg",
+    image: "/saveinta_779048656.webp",
     shortDesc: "MBI Surabaya kembali hadir dalam aksi nyata kepedulian untuk saudara-saudara kita yang terdampak bencana di NTT.",
     fullDesc: "MBI Surabaya kembali hadir dalam aksi nyata kepedulian untuk saudara-saudara kita yang terdampak bencana di NTT. Bantuan dari keluarga besar MBI Surabaya telah tiba di Pos Penampungan Sementara Denma Pasmar 2 dan selanjutnya akan diberangkatkan menuju NTT dalam gelombang ke-3 melalui Armada 2.",
     highlights: [

@@ -36,7 +36,7 @@ export const UPCOMING_EVENTS: EventItem[] = [
     subtitle: "FOUR EVER",
     location: "SURABAYA — MOJOKERTO — JOMBANG — BATU",
     time: "06:00 WIB - Selesai",
-    image: "/flyer mbi four ever.jpg",
+    image: "/flyer_mbi_four_ever.webp",
     description: "Puncak peringatan 4 tahun Motor Besar Indonesia Surabaya. Merayakan 4 tahun dedikasi persaudaraan dengan convoy touring akbar, gala dinner, bakti sosial peduli anak yatim, dan penampilan musik kebersamaan.",
     organizer: "Pengurus Daerah MBI Surabaya",
     expectedParticipants: "55+ Big Motorcycle Riders",

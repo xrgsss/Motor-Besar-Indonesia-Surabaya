@@ -59,7 +59,7 @@ export const INTERNAL_NEWS: NewsArticle[] = [
     date: "Ramadan",
     author: "Tim Peduli Sesama MBI",
     source: "MBI Surabaya",
-    image: "/SaveInta.com_649234591_18034390166782080_1948599554940140407_n.jpg",
+    image: "/saveinta_649234591.webp",
     excerpt: "Komunitas Motor Besar Indonesia (MBI) Surabaya turun ke jalan membagikan 1.000 paket takjil berbuka puasa untuk pengendara dan masyarakat umum.",
     content: "Semangat berbagi MBI Surabaya diwujudkan dengan membagikan 1.000 paket takjil secara gratis kepada para pengguna jalan dan pengendara di titik-titik strategis Kota Surabaya.",
     isExternal: true,

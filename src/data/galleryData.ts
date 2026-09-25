@@ -15,7 +15,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "KOPDAR",
     date: "Agustus 2026",
     location: "Madura",
-    src: "/g1.png",
+    src: "/g1.webp",
     aspectRatio: "wide"
   },
   {
@@ -24,7 +24,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "Motorcycle Events",
     date: "Juli 2026",
     location: "Bumi Marinir Karang Pilang Surabaya",
-    src: "/g2.png",
+    src: "/g2.webp",
     aspectRatio: "square"
   },
   {
@@ -33,7 +33,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "KOPDAR",
     date: "Juli 2026",
     location: "Taman Dayu",
-    src: "/g3.png",
+    src: "/g3.webp",
     aspectRatio: "square"
   },
   {
@@ -42,7 +42,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "CHARITY",
     date: "November 2025",
     location: "Sumatra",
-    src: "/g5.jpg",
+    src: "/g5.webp",
     aspectRatio: "tall"
   },
   {
@@ -51,7 +51,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "TOURING",
     date: "November 2025",
     location: "Bogor",
-    src: "/g6.jpg",
+    src: "/g6.webp",
     aspectRatio: "wide"
   },
   {
@@ -60,7 +60,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "EVENT",
     date: "November 2025",
     location: "Surabaya",
-    src: "/g7.jpg",
+    src: "/g7.webp",
     aspectRatio: "square"
   },
   {
@@ -69,7 +69,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "ANNIVERSARY",
     date: "Oktober 2025",
     location: "Surabaya",
-    src: "/g4.jpg",
+    src: "/g4.webp",
     aspectRatio: "wide"
   },
   {
@@ -78,7 +78,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "CHARITY",
     date: "Juni 2025",
     location: "Lamongan",
-    src: "/g8.jpg",
+    src: "/g8.webp",
     aspectRatio: "wide"
   },
   {
@@ -87,7 +87,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "TOURING",
     date: "Mei 2025",
     location: "Borobudur",
-    src: "/g9.jpg",
+    src: "/g9.webp",
     aspectRatio: "square"
   }
 ];

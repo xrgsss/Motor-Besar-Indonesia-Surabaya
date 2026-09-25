@@ -11,9 +11,11 @@ export const CommunityCTA: React.FC<CommunityCTAProps> = ({ onOpenJoinModal }) =
       {/* Background Riding Photo with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2000&auto=format&fit=crop"
+          src="/g7.webp"
           alt="MBI Community Riding"
           className="w-full h-full object-cover object-center opacity-30 filter grayscale hover:grayscale-0 transition-all duration-1000"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/90 to-[#050505]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(5,5,5,0.9)_100%)]" />

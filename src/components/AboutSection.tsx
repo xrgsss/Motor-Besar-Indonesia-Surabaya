@@ -37,6 +37,8 @@ export const AboutSection: React.FC = () => {
                   src="/logo.png"
                   alt="MBI Emblem"
                   className="w-14 h-14 object-contain filter drop-shadow-[0_0_10px_rgba(214,0,0,0.4)]"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <h3 className="font-heading font-bold text-lg text-white">CHAPTER SURABAYA</h3>

@@ -69,6 +69,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenJoinModal }) => {
                 src="/logo.png"
                 alt="Motor Besar Indonesia Surabaya Logo"
                 className="max-h-full max-w-full object-contain filter drop-shadow-[0_0_8px_rgba(214,0,0,0.5)]"
+                loading="eager"
+                decoding="async"
               />
             </div>
             <div className="flex flex-col">
