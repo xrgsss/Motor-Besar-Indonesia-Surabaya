@@ -69,14 +69,14 @@ export const CLUB_INFO = {
   establishedYear: "2018",
   city: "Surabaya, Jawa Timur",
   country: "Indonesia",
-  address: "Jl. Raya Darmo No. 120, Tegalsari, Surabaya, Jawa Timur 60241",
-  email: "info@mbisurabaya.or.id",
-  whatsapp: "+62 812-3456-7890",
+  address: "Jalan Ratna no 14, Ngagel, Kec. Wonokromo., Surabaya, Indonesia 60246",
+  email: "mbi.motor.besar.indonesia.surabaya@gmail.com",
+  whatsapp: "+62 812-1717-2843",
   socials: {
     instagram: "https://instagram.com/mbi_surabaya",
     facebook: "https://facebook.com/mbisurabaya.official",
     youtube: "https://youtube.com/@mbisurabaya",
-    whatsapp: "https://wa.me/6281234567890"
+    whatsapp: "https://wa.me/6281217172843"
   },
   aboutParagraph1: "Motor Besar Indonesia Surabaya merupakan komunitas pecinta motor besar (big motorcycle) yang menjadi wadah eksklusif bagi para enthusiast roda dua di Jawa Timur untuk membangun persaudaraan yang solid, berbagi passion berkendara, berkegiatan sosial, serta menjaga semangat kebersamaan di setiap jengkal perjalanan.",
   aboutParagraph2: "Dengan komitmen pada ketaatan lalu lintas dan etika berkendara yang santun, MBI Surabaya terus aktif mengagendakan touring lintas Nusantara, Bakti Sosial peduli sesama, hingga event otomotif berskala nasional."
