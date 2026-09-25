@@ -37,57 +37,57 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     aspectRatio: "square"
   },
   {
-    id: "gal-4",
-    title: "Bromo Sunrise Expedition",
-    category: "ANNIVERSARY",
-    date: "Oktober 2025",
-    location: "Kawasan Bromo Highlands",
-    src: "https://images.unsplash.com/photo-1558980664-769d59546b3d?q=80&w=1600&auto=format&fit=crop",
-    aspectRatio: "wide"
-  },
-  {
     id: "gal-5",
-    title: "Surabaya Big Bike Expo",
-    category: "EVENT",
+    title: "MBI Surabaya peduli Sumatra",
+    category: "CHARITY",
     date: "November 2025",
-    location: "Jatim Expo Surabaya",
-    src: "https://images.unsplash.com/photo-1515777315837-271194636c83?q=80&w=1600&auto=format&fit=crop",
+    location: "Sumatra",
+    src: "/g5.jpg",
     aspectRatio: "tall"
   },
   {
     id: "gal-6",
-    title: "Mountain Highway Escapade",
+    title: "Goes to bogor bike fest 2026",
     category: "TOURING",
-    date: "Juli 2026",
-    location: "Jalur Perbukitan Cangar",
-    src: "https://images.unsplash.com/photo-1547038577-da80abbc4f19?q=80&w=1600&auto=format&fit=crop",
+    date: "November 2025",
+    location: "Bogor",
+    src: "/g6.jpg",
     aspectRatio: "wide"
   },
   {
     id: "gal-7",
-    title: "MBI Surabaya Gala Dinner",
-    category: "ANNIVERSARY",
-    date: "Oktober 2025",
-    location: "Hotel Majapahit Surabaya",
-    src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1600&auto=format&fit=crop",
+    title: "Event marine day",
+    category: "EVENT",
+    date: "November 2025",
+    location: "Surabaya",
+    src: "/g7.jpg",
     aspectRatio: "square"
   },
   {
+    id: "gal-4",
+    title: "3rd Anniversary",
+    category: "ANNIVERSARY",
+    date: "Oktober 2025",
+    location: "Surabaya",
+    src: "/g4.jpg",
+    aspectRatio: "wide"
+  },
+  {
     id: "gal-8",
-    title: "Santunan Anak Yatim & Dhuafa",
+    title: "Idul adha penyembelihan hewan qurban",
     category: "CHARITY",
-    date: "Desember 2025",
-    location: "Kenjeran Surabaya",
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+    date: "Juni 2025",
+    location: "Lamongan",
+    src: "/g8.jpg",
     aspectRatio: "wide"
   },
   {
     id: "gal-9",
-    title: "Weekend Coffee & Engine Talk",
-    category: "KOPDAR",
-    date: "Juni 2026",
-    location: "Dharmahusada Surabaya",
-    src: "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=1600&auto=format&fit=crop",
+    title: "GOES TO BOROBUDUR INTERNATIONAL BIKE WEEK",
+    category: "TOURING",
+    date: "Mei 2025",
+    location: "Borobudur",
+    src: "/g9.jpg",
     aspectRatio: "square"
   }
 ];
